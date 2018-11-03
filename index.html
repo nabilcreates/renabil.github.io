@@ -7,6 +7,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
@@ -14,15 +16,10 @@
 
     <div class="app">
 
-        <div class="contner">
             <input type="text" v-model="search" class="searchbox" placeholder="Search...">
-        </div>
 
         <div class="works" v-for="data in filteredSearch">
-
-            <a class="btn btn-primary" :href="data.html_url" target="_blank"><span class="workname">{{data.name}}</span>
-                <br> <span class="workdesc">{{data.description}}</span></a>
-
+            <a class="btn btn-primary" :href="data.html_url" target="_blank">renabil/<span class="workname">{{data.name}}</span></a>
         </div>
 
     </div>
