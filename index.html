@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="contner">
+            <input type="text" v-model="search" class="searchbox" placeholder="Search...">
+        </div>
+
+        <div class="works" v-for="data in filteredSearch">
+
+            <a class="btn btn-primary" :href="data.html_url" target="_blank"><span class="workname">{{data.name}}</span>
+                <br> <span class="workdesc">{{data.description}}</span></a>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

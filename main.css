@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+body{
+    font-family: 'Noto Sans';
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #222222;
+}
+
+.works a{
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.workname{
+    font-weight: 700;
+    /* margin-right: 50px; */
+}
+
+.workdesc{
+    font-size: 15px;
+}
+
+.contner{
+    width: 95vw;
+    margin: auto;
+}
+
+.searchbox{
+    text-align: center;
+    width: 100vw;
+    height: 5vh;
+    border: 0;
+    border-radius: 0;
+    background: #222222;
+    color: white;
+}
