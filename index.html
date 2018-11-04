@@ -16,12 +16,18 @@
 
     <div class="app">
 
-            <input type="text" v-model="search" class="searchbox" placeholder="Search...">
+        <input type="text" v-model="search" class="searchbox" placeholder="Search...">
 
-        <div class="works" v-for="data in filteredSearch">
-            <a class="btn btn-primary" :href="data.html_url" target="_blank">renabil/<span class="workname">{{data.name}}</span></a>
-        </div>
-
+            <div class="works card" v-for="data in filteredSearch">
+                <h3 class="card-header">
+                    {{data.name}}
+                </h3>
+                <div class="card-body">
+                    <p>{{data.description}}</p>
+                    <a :href="data.html_url" target="_blank" class="btn btn-warning">Repository Link</a>
+                </div>
+            </div>
+            
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
