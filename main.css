@@ -1,15 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
 
 body{
-    font-family: 'Noto Sans';
+    font-family: 'Helvetica';
+    background: #161616;
+    font-size: 13px;
 }
 
-.searchbox{
-    width: 100vw;
-    text-align: center;
-    height: 50px;
+.info p{
+    font-size: 13px;
+    float: right;
+    clear: right;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    display: block;
+    padding: 10px 0;
+    background: #222222;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    background-color: #161616;
+}
+.cont{
+    width: 96vw;
+    margin: auto;
+}
+
+.info{
+    font-size: 13px;
+}
+
+li:nth-child(odd) a{
+    background: #2c2c2c;
 }
