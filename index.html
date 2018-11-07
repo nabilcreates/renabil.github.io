@@ -22,52 +22,57 @@
 
         <div class="jumbotron">
 
-            
-            
-            <img src="./face.jpg" class="img-thumbnail" width="100px">
-            
-            <br>
-            <br>
-            <br>
-            
-            <h6 class="card-subtitle mb-2 text-muted">WEB DEVELOPER / PROGRAMMER</h6>
-            
-            <h1>Nabil Ridhwanshah</h1>
+            <div class="container">
+                <img src="./face.jpg" class="img-thumbnail" width="100px">
 
-            <h6 class="card-subtitle mb-2 text-muted">@renabil</h6>
+                <br>
+                <br>
+                <br>
 
-            <p>Im 15, Full Stack Web Developer & App Developer and uses Vue practically anywhere!</p>
-        </div>
+                <h6 class="card-subtitle mb-2 text-muted">WEB DEVELOPER / PROGRAMMER</h6>
 
-        <input type="text" v-model='search' class="searchbox" placeholder="Search For Works">
+                <h1>Nabil Ridhwanshah</h1>
 
+                <h6 class="card-subtitle mb-2 text-muted">@renabil</h6>
 
-        <div v-for='data in filteredSearch'>
-
-            <div class="card">
-
-                
-                <div class="card-body">
-                    
-                    <h3><a :href="data.html_url">{{data.name}}</a></h3>
-                    <p>{{data.description}}</p>
-
-                    <!-- LICENSE (IF FOUND) -->
-                    <p class="card-subtitle mb-2 text-muted" v-if='data.license !== null'>{{data.license.name}}</p>
-
-                    <!-- ELSE -->
-                    <p class="card-subtitle mb-2 text-muted" v-else>Unlicensed</p>
-
-                    <p class="card-subtitle mb-2 text-muted">Created: {{data.created_at.split('T')[0]}}</p>
-
-                    <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i>{{data.stargazers_count}}</p>
-
-
-
-                </div>
+                <p>Im 15, Full Stack Web Developer & App Developer and uses Vue practically anywhere!</p>
             </div>
 
         </div>
+
+        
+        <input type="text" v-model='search' class="searchbox" placeholder="Search For Works...">
+        
+        <div class="container">
+
+            <div v-for='data in filteredSearch'>
+
+                <div class="card">
+    
+    
+                    <div class="card-body">
+    
+                        <h3><a :href="data.html_url">{{data.name}}</a></h3>
+                        <p>{{data.description}}</p>
+    
+                        <!-- LICENSE (IF FOUND) -->
+                        <p class="card-subtitle mb-2 text-muted" v-if='data.license !== null'>{{data.license.name}}</p>
+    
+                        <!-- ELSE -->
+                        <p class="card-subtitle mb-2 text-muted" v-else>Unlicensed</p>
+    
+                        <p class="card-subtitle mb-2 text-muted">Created: {{data.created_at.split('T')[0]}}</p>
+    
+                        <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i>{{data.stargazers_count}}</p>
+    
+    
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
     </div>
 
     </div>
