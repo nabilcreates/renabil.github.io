@@ -28,6 +28,10 @@ a{
     color: white;
 }
 
+a:hover{
+    color: white;
+}
+
 .searchbox::placeholder{
     color: #505050;
 }
