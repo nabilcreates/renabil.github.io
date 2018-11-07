@@ -31,12 +31,18 @@
                 <h3 class="card-header"><a :href="data.html_url">{{data.name}} 🔗</a></h3>
 
                 <div class="card-body">
-                    <span class="card-subtitle mb-2 text-muted">{{data.description}}</span>
-
-                    <br>
-                    <br>
                     
+                    <p class="card-subtitle mb-2 text-muted">{{data.description}}</p>
+                    
+                    <!-- LICENSE (IF FOUND) -->
+                    <p class="card-subtitle mb-2 text-muted" v-if='data.license !== null'>{{data.license.name}}</p>
+                    
+                    <!-- ELSE -->
+                    <p class="card-subtitle mb-2 text-muted" v-else>Unlicensed</p>
+
                     <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i> {{data.stargazers_count}}</p>
+
+
                 </div>
             </div>
 
