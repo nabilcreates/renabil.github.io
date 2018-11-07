@@ -20,6 +20,9 @@
 <body>
 
     <div class="app">
+
+        <input type="text" v-model='search'>
+        
         <ul>
             <li v-for="data in filteredSearch">
                 <a :href="data.html_url">
