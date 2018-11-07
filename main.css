@@ -5,6 +5,8 @@ body{
     background: #161616;
     font-size: 13px;
     color: white;
+    /* word-break: break-all; */
+    word-wrap: break-word;
 }
 
 .searchbox{
