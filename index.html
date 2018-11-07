@@ -53,8 +53,10 @@
                     <!-- ELSE -->
                     <p class="card-subtitle mb-2 text-muted" v-else>Unlicensed</p>
 
-                    <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i>
-                        {{data.stargazers_count}}</p>
+                    <p class="card-subtitle mb-2 text-muted">Created: {{data.created_at.split('T')[0]}}</p>
+
+                    <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i>{{data.stargazers_count}}</p>
+
 
 
                 </div>
