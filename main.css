@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
 
 body{
-    font-family: 'Helvetica';
+    font-family: 'IBM Plex Sans', sans-serif;
     background: #161616;
     font-size: 13px;
 }
@@ -32,7 +32,7 @@ a:hover{
     background-color: #161616;
 }
 .cont{
-    width: 98%;
+    width: 95%;
     margin: auto;
 }
 
