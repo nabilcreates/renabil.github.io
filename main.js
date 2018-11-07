@@ -12,7 +12,7 @@ var app = new Vue({
     computed: {
         filteredSearch: function(){
             return this.apiData.filter((data)=>{
-                return data.name.match(this.search);
+                return data.name.toLowerCase().match(this.search);
             })
         }
     },
