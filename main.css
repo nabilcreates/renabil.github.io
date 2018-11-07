@@ -4,42 +4,30 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     background: #161616;
     font-size: 13px;
-}
-
-.info p{
-    font-size: 13px;
-    float: right;
-    clear: right;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a{
-    display: block;
-    padding: 10px 0;
-    background: #222222;
-    text-decoration: none;
     color: white;
 }
 
-a:hover{
-    color: rgb(206, 206, 206);
-    text-decoration: none;
-    background-color: #161616;
-}
-.cont{
-    width: 95%;
-    margin: auto;
+.searchbox{
+    width: 100%;
+    padding: 20px;
+    background: #292929;
+    border: 1px solid #252525;
+    color: white;
 }
 
-.info{
-    font-size: 13px;
+.card{
+    background: #161616;
 }
 
-li:nth-child(odd) a{
-    background: #2c2c2c;
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.searchbox::placeholder{
+    color: #505050;
 }

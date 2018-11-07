@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>renabil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-    
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
-    
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -21,29 +21,27 @@
 
     <div class="app">
 
-        <input type="text" v-model='search'>
-        
-        <ul>
-            <li v-for="data in filteredSearch">
-                <a :href="data.html_url">
-                    <div class="cont">
+        <input type="text" v-model='search' class="searchbox" placeholder="Search For Repo">
 
-                        <div class="info">
-                            <p><b>{{data.language}}</b> <i class="fas fa-star"></i> {{data.stargazers_count}}</p>
-                        </div>
 
-                        <b class="repo-name">{{data.name}}</b>
-                        <br>
-                        <span class="desc">
-                            {{data.description}}
-                        </span>
+        <div v-for='data in filteredSearch'>
 
-                    </div>
-                </a>
+            <div class="card">
 
-            </li>
+                <h3 class="card-header"><a :href="data.html_url">{{data.name}} 🔗</a></h3>
 
-        </ul>
+                <div class="card-body">
+                    <span class="card-subtitle mb-2 text-muted">{{data.description}}</span>
+
+                    <br>
+                    <br>
+                    
+                    <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i> {{data.stargazers_count}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     </div>
 
