@@ -8,6 +8,7 @@ body{
 }
 
 .searchbox{
+    margin: 0;
     width: 100%;
     padding: 30px 20px;
     background: #292929;
@@ -34,4 +35,9 @@ a:hover{
 
 .searchbox::placeholder{
     color: #858585;
+}
+
+.jumbotron{
+    background: #202020;
+    margin: 0;
 }

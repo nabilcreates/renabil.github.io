@@ -7,8 +7,7 @@
     <title>renabil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
 
@@ -20,7 +19,18 @@
 <body>
 
     <div class="app">
-        
+
+        <div class="jumbotron">
+            <h3 class="card-subtitle mb-2 text-muted">@RENABIL</h3>
+            <h1>Nabil Ridhwanshah</h1>
+
+            <h4 class="card-subtitle mb-2 text-muted" ><i class="fas fa-map-marked-alt"></i> Singapore</h4>
+            
+            <p>Im 15, Full Stack Web Developer & App Developer and uses Vue practically anywhere!</p>
+
+
+        </div>
+
         <input type="text" v-model='search' class="searchbox" placeholder="Search For Repo">
 
 
@@ -28,19 +38,20 @@
 
             <div class="card">
 
-                <h3 class="card-header"><a :href="data.html_url">{{data.name}} 🔗</a></h3>
+                <h3 class="card-header"><a :href="data.html_url">{{data.name}}</a></h3>
 
                 <div class="card-body">
-                    
+
                     <p class="card-subtitle mb-2 text-muted">{{data.description}}</p>
-                    
+
                     <!-- LICENSE (IF FOUND) -->
                     <p class="card-subtitle mb-2 text-muted" v-if='data.license !== null'>{{data.license.name}}</p>
-                    
+
                     <!-- ELSE -->
                     <p class="card-subtitle mb-2 text-muted" v-else>Unlicensed</p>
 
-                    <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i> {{data.stargazers_count}}</p>
+                    <p class="card-subtitle mb-2 text-muted">{{data.language}} <i class="fas fa-star"></i>
+                        {{data.stargazers_count}}</p>
 
 
                 </div>
