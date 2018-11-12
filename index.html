@@ -52,7 +52,7 @@
     
                     <div class="card-body">
     
-                        <h3><a :href="data.html_url">{{data.name}}</a></h3>
+                        <h3><a :href="data.html_url">{{data.name.slice(0,1).toUpperCase() + data.name.slice(1)}}</a></h3>
                         <p>{{data.description}}</p>
     
                         <!-- LICENSE (IF FOUND) -->
