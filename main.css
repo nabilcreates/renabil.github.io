@@ -1,54 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
-
-body{
+body {
+    background: url('https://images.unsplash.com/photo-1543884941-129cbb08f711?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    color: white;
     font-family: 'IBM Plex Sans', sans-serif;
-    background: #161616;
-    font-size: 13px;
-    color: white;
-    /* word-break: break-all; */
-    word-wrap: break-word;
+
 }
 
-.searchbox{
-    margin: 0;
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+.jumbotron {
+    padding: 10rem 0;
+    background: rgba(0, 0, 0, 0)
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+}
+
+.custombutton {
+    border-radius: 0 !important;
+    padding: 1rem 2rem;
+}
+
+.customrow {
+    background: #0f0f0f;
+    padding: 2rem;
+}
+
+.overlay {
+    z-index: -1;
+    height: 100%;
     width: 100%;
-
-    /* SIZE OF SEARCHBOX */
-    padding: 25px 0;
-    text-align: center;
-    background: #292929;
-    border: 1px solid #252525;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    /*can be anything, of course*/
 }
 
-.card{
-    background: #161616;
+nav{
+    padding: 2rem 0;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
-    color: white;
+nav a{
+    color: white !important;
+    padding: 0 0.2rem;
 }
 
-a{
-    color: white;
-}
-
-a:hover{
-    color: white;
-}
-
-.searchbox::placeholder{
-    color: #858585;
-}
-
-.jumbotron{
-    background: #202020;
-    margin: 0;
-}
-
-h1{
-    font-size: 48px;
+.activepage{
+    text-decoration: underline;
 }
