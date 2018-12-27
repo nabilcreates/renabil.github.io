@@ -19,7 +19,7 @@ var app = new Vue({
     
     methods: {
         getAPI(){
-            fetch("https://api.github.com/users/renabil/repos?sort=updated")
+            fetch("https://api.github.com/users/renabil/repos?sort=updated&per_page=100")
             .then(res => res.json())
             .then(json => {
                 this.apiData = json
