@@ -1,5 +1,6 @@
 body {
-    background: url('https://images.unsplash.com/photo-1545231089-9b467acbb9a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    /* background: url('https://images.unsplash.com/photo-1545231089-9b467acbb9a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); */
+    background: url('bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
