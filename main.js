@@ -9,14 +9,6 @@ var app = new Vue({
         }
     },
 
-    computed: {
-        filteredSearch: function(){
-            return this.apiData.filter((data)=>{
-                return data.name.toLowerCase().match(this.search);
-            })
-        }
-    },
-    
     methods: {
         getAPI(){
             fetch("https://api.github.com/users/renabil/repos?sort=updated&per_page=100")
