@@ -1,2 +1,2 @@
-# renabil.github.io (renabil's github page)
-My Website :)
+# Renabil
+This is my website which is also by portfolio.
