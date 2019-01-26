@@ -9,7 +9,7 @@ let app = new Vue({
 
     methods: {
         fetch_api() {
-            fetch('https://api.github.com/users/renabil/repos')
+            fetch('https://api.github.com/users/renabil/repos?per_page=100')
                 .then(response => response.json())
                 .then(json => {
                     this.api_data = json

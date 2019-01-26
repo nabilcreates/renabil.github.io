@@ -14,6 +14,8 @@
 
     <div class="app">
 
+        {{api_data.length}} Repos
+        
         <div id="works" v-for='item in api_data'>
             <a :href="item.html_url">{{item.name}}</a>
         </div>
