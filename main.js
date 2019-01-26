@@ -1,26 +1,24 @@
-var app = new Vue({
+let app = new Vue({
+    el: '.app',
 
-    el: ".app",
-    data(){
-        return{
-            title: "hey",
-            apiData: [],
-            search: "",
+    data() {
+        return {
+            api_data: [],
         }
     },
 
     methods: {
-        getAPI(){
-            fetch("https://api.github.com/users/renabil/repos?sort=updated&per_page=100")
-            .then(res => res.json())
-            .then(json => {
-                this.apiData = json
-            })
+        fetch_api() {
+            fetch('https://api.github.com/users/renabil/repos')
+                .then(response => response.json())
+                .then(json => {
+                    this.api_data = json
+                })
         }
     },
 
-    mounted(){
-        this.getAPI()
+    created(){
+        this.fetch_api()
     }
-    
+
 })
