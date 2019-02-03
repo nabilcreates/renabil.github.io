@@ -1,0 +1,30 @@
+body{
+    font-family: 'Overpass Mono', monospace;
+    background: black;
+    color: white;
+    margin: 0;
+}
+
+a{
+    color: yellow;
+    font-weight: 700;
+}
+
+#works{
+    margin: 2rem;
+}
+
+.search-box{
+    color: black;
+    background: yellow;
+    border: 0;
+    margin: 0;
+    padding: 1rem 2rem;
+    width: 100vw;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1rem;
+}
+
+.search-box::placeholder{
+    color: #555;
+}

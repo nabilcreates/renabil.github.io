@@ -7,6 +7,7 @@
     <title>Nabil Ridhwanshah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./static/css/main.css" />
 </head>
 
@@ -14,10 +15,13 @@
 
     <div class="app">
 
-        {{api_data.length}} Repos
+        <input type="text" v-model='search' class="search-box" placeholder="Search...">
         
-        <div id="works" v-for='item in api_data'>
-            <a :href="item.html_url">{{item.name}}</a> - {{item.description}}
+        <div id="works" v-for='item in results'>
+            <a :href="item.html_url">{{item.name}}</a>
+            <br>
+            {{item.description}}
+
         </div>
         
     </div>
