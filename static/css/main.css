@@ -5,8 +5,8 @@ body{
     margin: 0;
 }
 
-a{
-    color: yellow;
+.work-title{
+    color: white;
     font-weight: 700;
 }
 
@@ -16,7 +16,7 @@ a{
 
 .search-box{
     color: black;
-    background: yellow;
+    /* background: yellow; */
     border: 0;
     margin: 0;
     padding: 1rem 2rem;
