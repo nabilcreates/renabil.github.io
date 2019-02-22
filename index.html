@@ -18,9 +18,9 @@
         <input type="text" v-model='search' class="search-box" placeholder="Search...">
         
         <div id="works" v-for='item in results'>
-            <a :href="item.html_url">{{item.name}}</a>
+            <a class='work-title' :href="item.html_url">{{item.name}}</a>
             <br>
-            {{item.description}}
+            <p class="work-desc">{{item.description}}</p> 
 
         </div>
         

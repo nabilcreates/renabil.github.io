@@ -28,3 +28,7 @@ a{
 .search-box::placeholder{
     color: #555;
 }
+
+.work-title{
+    font-size: 1.5em;
+}
