@@ -7,7 +7,6 @@
     <title>Nabil Ridhwanshah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./static/css/main.css" />
 </head>
 
@@ -15,15 +14,24 @@
 
     <div class="app">
 
-        <input type="text" v-model='search' class="search-box" placeholder="Search...">
-        
-        <div id="works" v-for='item in results'>
-            <a class='work-title' :href="item.html_url">{{item.name}}</a>
-            <br>
-            <p class="work-desc">{{item.description}}</p> 
+        <div class="header">
+            <div class="container">
+                <h1>NABIL</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="works">
+                <div class="work" v-for='work in api_data'>
+                    <h3>{{work.name}}</h3>
+                    <p>{{work.description}}</p>
+                    <br>
+                    <a :href="work.html_url">Repository</a>
+                </div>
+            </div>
 
         </div>
-        
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>

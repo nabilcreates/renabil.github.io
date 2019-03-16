@@ -1,34 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 body{
-    font-family: 'Overpass Mono', monospace;
-    background: black;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: #333;
+    padding: 30px 0;
     color: white;
-    margin: 0;
+    letter-spacing: 10px;
+    text-align: center;
 }
 
-a{
-    color: yellow;
-    font-weight: 700;
+h1{
+    font-weight: 300;
+    font-size: 3em;
 }
 
-#works{
-    margin: 2rem;
+h3{
+    font-weight: 400;
 }
 
-.search-box{
-    color: black;
-    background: yellow;
-    border: 0;
-    margin: 0;
-    padding: 1rem 2rem;
-    width: 100vw;
-    font-family: 'Overpass Mono', monospace;
-    font-size: 1rem;
+.container{
+    width: 90vw;
+    margin: auto;
 }
 
-.search-box::placeholder{
-    color: #555;
+.works{
+    padding: 20px 0 0 0;
 }
 
-.work-title{
-    font-size: 1.5em;
+.works a{
+    text-decoration: none;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.work{
+    padding: 20px 0;
+}
+
+.work > p{
+    color: rgba(0,0,0,0.5);
+    font-weight: 300;
+}
+
+@media screen and (max-width: 992px){
+    .works{
+        grid-template-columns: auto;
+    }
 }
