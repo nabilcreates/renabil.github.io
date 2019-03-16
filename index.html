@@ -32,7 +32,7 @@
                     <p>{{work.description}}</p>
                     <br>
                     <a :href="work.html_url">Repository</a>
-                    <a v-if='work.has_pages' :href="work.html_url">Page</a>
+                    <a v-if='work.has_pages' :href="'https://renabil.github.io/' + work.name">Page</a>
                 </div>
             </div>
 
