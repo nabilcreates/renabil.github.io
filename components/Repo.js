@@ -3,11 +3,16 @@
 class Repo extends React.Component{
     render(){
 
-        // Access the props using this.props
+        // Console log the repo prop gotten
+        console.log(this.props.repo)
+
+        // for the sake of simplicity, let the prop repo become a variable
+        let repo =  this.props.repo
+
         return(
             <div>
-                <h1>{this.props.repo}</h1>
-                <p>https://fakegit.git/{this.props.repo}</p>
+                <h1>{repo.name}</h1>
+                <a href={repo.html_url}>Repository</a>
             </div>
         )
     }
