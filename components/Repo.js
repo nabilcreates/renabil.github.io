@@ -9,10 +9,17 @@ class Repo extends React.Component{
         // for the sake of simplicity, let the prop repo become a variable
         let repo =  this.props.repo
 
+        let renderGithubPages;
+
+        if(repo.has_pages){
+            renderGithubPages = <a className='repoLink' href={`https://renabil.github.io/` + repo.html_url}>Page</a>
+        }
+        
         return(
-            <div>
+            <div className='repo'>
                 <h1>{repo.name}</h1>
-                <a href={repo.html_url}>Repository</a>
+                <a className='repoLink' href={repo.html_url}>Repository</a>
+                {renderGithubPages}
             </div>
         )
     }
