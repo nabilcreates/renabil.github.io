@@ -17,7 +17,7 @@ class App extends React.Component {
     componentDidMount(){
 
         // Fetch API Data
-        fetch('https://api.github.com/users/renabil/repos?sort=recent&per_page=1000')
+        fetch('https://api.github.com/users/renabil/repos?sort=updated&per_page=1000')
             .then(response => response.json())
             .then(json => {
 
