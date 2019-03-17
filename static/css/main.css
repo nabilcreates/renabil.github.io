@@ -7,13 +7,15 @@ body{
 
 h1{
     font-weight: 300;
+    margin: 0;
 }
 
 .repo{
-    margin: 40px 0;
+    padding: 50px 0;
 }
 
 .repoLink{
+    font-weight: 400;
     text-decoration: none;
     color: #555;
     margin: 0 15px 0 0;
@@ -21,4 +23,15 @@ h1{
 
 .repo:nth-child(2n){
     background: rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    width: 95vw;
+    margin: auto;
+}
+
+.pageLink{
+    text-decoration: none;
+    color: #888;
+    margin: 0 15px 0 0;
 }
