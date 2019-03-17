@@ -22,9 +22,9 @@ class Repo extends React.Component{
         return(
             <div className='repo'>
                 <div className='container'>
-                    <p className='repodate'>CREATED ON {repodate}</p>
                     <h1>{repo.name}</h1>
                     <p>{repo.description}</p>
+                    <p className='repodate'>CREATED ON {repodate}</p>
                     <a className='repoLink' href={repo.html_url}>Repository</a>
                     {renderGithubPages}
                 </div>
