@@ -12,7 +12,7 @@ class Repo extends React.Component{
         let renderGithubPages;
 
         if(repo.has_pages){
-            renderGithubPages = <a className='pageLink' href={`https://renabil.github.io/` + repo.html_url}>Page</a>
+            renderGithubPages = <a className='pageLink' href={`https://renabil.github.io/` + repo.name}>Page</a>
         }
         
         return(
