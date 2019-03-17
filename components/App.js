@@ -46,6 +46,7 @@ class App extends React.Component {
             // finally, render the renderRepos in a div so i can use {}
             return (
                 <div>
+                    <Header />
                     {renderRepos}
                 </div>
             )
