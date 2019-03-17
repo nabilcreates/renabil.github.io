@@ -54,3 +54,20 @@ h1{
     margin: 0;
     padding: 0;
 }
+
+.linkicon{
+    font-size: 1.5em;
+}
+
+.linkButtons a{
+    color: rgba(255,255,255,0.5) !important;
+    margin: 10px;
+}
+
+.linkButtons a:visited{
+    color: rgba(255,255,255,0.5) !important;
+}
+
+.linkButtons a:hover{
+    color: whitesmoke !important;
+}
