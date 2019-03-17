@@ -8,40 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="./static/css/main.css" />
+
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <!-- React DOM -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
 </head>
 
 <body>
 
-    <div class="app">
+    <div id="root"></div>
 
-        <div class="header">
-            <div class="container">
-                <h1>REACT</h1>
-            </div>
-        </div>
-
-        <div class="container">
-
-
-            <div class="works">
-
-                <input type="text" class="searchbar" placeholder="Search Repositories" v-model='search'>
-
-                <div class="work" v-for='work in results'>
-                    <h3>{{work.name}}</h3>
-                    <p>{{work.description}}</p>
-                    <br>
-                    <a :href="work.html_url">Repository</a>
-                    <a v-if='work.has_pages' :href="'https://renabil.github.io/' + work.name">Page</a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
-    <script src="./static/js/main.js"></script>
+    <script type="text/babel" src="./components/App.js"></script>
+    <script type="text/babel" src="./components/Repo.js"></script>
+    <script type="text/babel" src="./static/js/main.js"></script>
 
 </body>
 
