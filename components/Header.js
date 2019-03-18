@@ -19,20 +19,27 @@ class Header extends React.Component{
                     <div className='top-header'>
 
                         <div className='top-top-header'>
-                            <p>TOTAL OF {this.props.lengthOfRepos} REPOSITORIES</p>
-                            <p>PROFILE IS {new Date().getFullYear() - new Date('2018-10-27T05:30:28Z').getFullYear()} YEAR(S) OLD</p>
+                            <img className='profilepic' src='./static/profilepic.jpg'></img>
                         </div>
                     
-                        <h1>NABIL</h1>
-                        <div className='linkButtons'>
-                        
-                        <a href='https://github.com/renabil'><i className="fa fa-github linkicon"></i></a>
+                        <div className='top-center-header'>
 
-                        <a href='https://instagram.com/nab1lll'><i className="fa fa-instagram linkicon"></i></a>
+                            <h2>"RE"NABIL</h2>
 
-                        <a href='https://renabil.github.io'><i className="fa fa-pencil-square linkicon"></i></a>
-                        
+                            <p>PROFILE IS {new Date().getFullYear() - new Date('2018-10-27T05:30:28Z').getFullYear()} YEAR(S) OLD</p>
+                            <p>TOTAL OF {this.props.lengthOfRepos} REPOSITORIES</p>
+
+                            <div className='linkButtons'>
+
+                                <a href='https://github.com/renabil'><i className="fa fa-github linkicon"></i></a>
+
+                                <a href='https://instagram.com/nab1lll'><i className="fa fa-instagram linkicon"></i></a>
+
+                                <a href='https://renabil.github.io'><i className="fa fa-pencil-square linkicon"></i></a>
+                            
+                            </div>
                         </div>
+                        
                     </div>
 
                     
