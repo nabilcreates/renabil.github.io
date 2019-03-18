@@ -99,6 +99,12 @@ h1{
     outline: 5px solid #fff;
 }
 
+.top-center-header h2{
+    margin: 0;
+    padding: 0;
+    margin: 10px 0;
+}
+
 @media only screen and (max-width: 768px) {
     .top-header{
         display: grid;
