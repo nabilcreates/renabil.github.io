@@ -28,7 +28,7 @@ class App extends React.Component {
                 })
             })
         }
-        
+
         render() {
         
             // let this become a variable for conditional rendering
@@ -46,7 +46,7 @@ class App extends React.Component {
             // finally, render the renderRepos in a div so i can use {}
             return (
                 <div>
-                    <Header />
+                    <Header lengthOfRepos={this.state.repos.length} />
 
                     {/* Conditional Rendering */}
                     {/* If loadedData, then render the renderRepos which is a map of all repos, else render a h1 with the text Loading... inside. */}
