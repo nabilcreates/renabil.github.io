@@ -20,7 +20,7 @@ class Header extends React.Component{
 
                         <div className='top-top-header'>
                             <p>TOTAL OF {this.props.lengthOfRepos} REPOSITORIES</p>
-                            <p>PROFILE IS {2019 - new Date('2018-10-27T05:30:28Z').getFullYear()} YEAR(S) OLD</p>
+                            <p>PROFILE IS {new Date().getFullYear() - new Date('2018-10-27T05:30:28Z').getFullYear()} YEAR(S) OLD</p>
                         </div>
                     
                         <h1>NABIL</h1>
