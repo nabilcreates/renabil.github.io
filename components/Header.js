@@ -18,15 +18,8 @@ class Header extends React.Component{
                     
                     <div className='top-header'>
 
-                        <div className='top-top-header'>
-                            <img className='profilepic' src='./static/profilepic.jpg'></img>
-                        </div>
-                    
                         <div className='top-center-header'>
 
-                            <h2>"RE"NABIL</h2>
-
-                            <p>PROFILE IS {new Date().getFullYear() - new Date('2018-10-27T05:30:28Z').getFullYear()} YEAR(S) OLD</p>
                             <p>TOTAL OF {this.props.lengthOfRepos} REPOSITORIES</p>
 
                             <div className='linkButtons'>

@@ -1,39 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,700');
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
     word-break: break-all;
+    color: whitesmoke;
 }
 
 h1{
-    font-weight: 300;
+    font-weight: 700;
     margin: 0;
 }
 
 .repo{
     padding: 50px 0;
+    background: #353535;
+}
+
+.repo:hover{
+    transform: scale(1.03);
+    box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .repoLink{
     font-weight: 400;
+    color: #888;
     text-decoration: none;
-    color: #555;
     margin: 0 15px 0 0;
 }
 
 .repo:nth-child(2n){
-    background: rgba(0, 0, 0, 0.05);
+    background: #303030;
 }
 
 .container{
-    width: 95vw;
+    width: 90vw;
     margin: auto;
 }
 
 .pageLink{
     text-decoration: none;
-    color: #888;
+    color: #555;
     margin: 0 15px 0 0;
 }
 
@@ -80,15 +87,6 @@ h1{
 
 .repodate{
     font-size: 0.8em;
-    color: rgba(0,0,0,0.5) !important;
-}
-
-.top-header{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    align-items: center;
-    grid-gap: 20px;
 }
 
 .profilepic{
@@ -104,18 +102,3 @@ h1{
     padding: 0;
     margin: 10px 0;
 }
-
-@media only screen and (max-width: 768px) {
-    .top-header{
-        display: grid;
-        grid-template-rows: auto auto auto;
-        grid-template-columns: auto;
-        align-items: center;
-        grid-gap: 20px;
-
-    }
-  }
-
-  .top-top-header p{
-      margin: 5px 0;
-  }
