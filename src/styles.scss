@@ -54,6 +54,9 @@ body{
         padding: 45px 0;
 
         h6{
+            color: lighten($background, 30%);
+            text-transform: uppercase;
+            letter-spacing: 2px;
             margin: 0;
             font-weight: 300;
             font-size: 0.8em;
