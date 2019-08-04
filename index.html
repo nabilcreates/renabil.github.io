@@ -1,20 +1,77 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>renabil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aww man!</title>
 
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Nunito:300,700&display=swap');
+
+        body{
+            background: #111;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .maintainence{
+            color: #fff;
+            width: 350px;
+            text-align: center;
+            margin: 20% auto;
+        }
+
+        .maintainence h1{
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+        .maintainence p{
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 2%;
+            color: #fff;
+            background: #fff;
+            color: #222;
+
+        }
+
+        a:hover{
+            background: none;
+            color: #fff;
+            transition: background 200ms linear;
+            transition: color 200ms linear;
+        }
+
+        #links{
+            margin: 5% 0;
+        }
+    </style>
+</head>
 <body>
     
-    <div id="root"></div>
+    <div class="maintainence">
+        <h1>Aww man!</h1>
+        <p>I am going through significant changes! It's supposed to make me faster! I'm going to come back pretty soon!</p>
 
+        <br>
 
-    <script src="./dist/bundle.index.js"></script>
+        <p id="links">
+            <a href="https://instagram.com/lulangsiilumati">Instagram</a>
+            <a href="https://github.com/renabil">GitHub</a>
+            <a href="https://github.com/renabil/renabil.github.io">Repository</a>
+        </p>
+    </div>
+
+    <div id="body"></div>
+
+    <script src="./static/main.js"></script>
 </body>
-
 </html>
