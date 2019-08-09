@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Nunito:400,700&display=swap');
+
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(24, 24, 24);
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+#header{
+    background: whitesmoke;
+    color: #222;
+    padding: 20px 20px;
+}
+
+#header p{
+    margin: 0;
+}
+
+.repo{
+    padding: 30px 20px;
+    margin: 0px;
+}
+
+.repo h1{
+    margin: 0;
+    padding: 0;
+}
+
+.repo p{
+    color: rgb(139, 139, 139);
+    margin: 5px 0;
+    padding: 0;
+}
+
+.repo:nth-of-type(2n){
+    background: #222;
+}
