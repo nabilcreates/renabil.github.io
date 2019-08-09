@@ -4,9 +4,6 @@ return_repos('renabil')
 .then(datas => {
     datas.forEach(data => {
 
-        // log the data
-        console.log(data)
-
         // Append to the body
         body.innerHTML += `
             <div id='${data.name}' class='repo'>

@@ -17,7 +17,7 @@ async function return_recent_repos(username) {
 async function return_repos(username) {
     let return_array = [];
 
-    await fetch('https://api.github.com/users/' + username + '/repos?sort=fullname&per_page=100')
+    await fetch('https://api.github.com/users/' + username + '/repos?sort=updated&per_page=100')
         .then(response => response.json())
         .then(json => {
             return_array = json;
